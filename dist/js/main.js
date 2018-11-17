@@ -21,7 +21,7 @@ function toggleMenu() {
 
     //navItems used querySelecterAll() inorder to call all the three nav-item so, we are using forEach() here,which is a higher order array method
 
-    navItems.forEach(item => item.classList.remove("show"));
+    navItems.forEach(item => item.classList.add("show"));
 
     //Set menu state.
     showMenu = true;

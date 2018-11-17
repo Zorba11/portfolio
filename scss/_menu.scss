@@ -37,3 +37,99 @@
     }
   }
 }
+
+//Menu overlay
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-branding,
+  &-nav {
+    //implies class menu-branding
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center; // aligns the items both horizontally and vertically to the center.
+    float: left;
+    width: 50%; //each side needs 50% of the width
+    height: 100vh; // height needs to take the height of the viewport
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5);
+    list-style: none;
+
+    transform: translate3d(0, -100%, 0); // makes the nav appear from top
+    @include easeOut;
+
+    &.show {
+      //Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //Branding side
+  &-branding {
+    background: $primary-color;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    &.show {
+      //Slide in from bottom.
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 240px;
+      height: 240px;
+      background: url("../img/alen_brand1.jpg");
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+    }
+  }
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      //Slide in from right.
+      transform: translate3d(0, 0, 0);
+    }
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+//Delay each nav item slide by 0.1s
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}
