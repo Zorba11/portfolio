@@ -1,6 +1,72 @@
-$primary-color: #444;
+@import "config";
+
+* {
+  box-sizing: border-box; //makes everything inside the box-model
+}
 
 body {
+  @include background;
   background: $primary-color;
   color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+//Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed; // let the menu stay always ontop,even when scrolling
+  z-index: 2;
+  width: 100%; // stretches across the screen
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icon {
+    //affects only the icons inside the main tag.
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+    }
+  }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+}
+a:hover {
+  color: $secondary-color !important;
+  @include easeOut();
 }

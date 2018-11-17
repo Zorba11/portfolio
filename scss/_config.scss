@@ -1,0 +1,33 @@
+$primary-color: #444;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(../img/art_build.jpg);
+$background-opacity: 0.75;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    //checks if the image is enabled
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover; //bgrd img will cover the entire space
+
+      &:after {
+        //pseudo element
+        content: "";
+        position: absolute;
+        //make the overlay cover the entirety.
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
