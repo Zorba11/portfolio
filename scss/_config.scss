@@ -37,7 +37,7 @@ $background-opacity: 0.75;
   @if (lightness($color) > 40) {
     @return #000; // if the lighness is greater than 40,the function returns black else it return white
   } @else {
-    @return #ffff;
+    @return #fff;
   }
 }
 
