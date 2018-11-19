@@ -39,10 +39,21 @@
 
     .portrait {
       background: url("../img/alen_brande_small.jpg");
-      width: 150px;
-      height: 150px;
+      width: 145px;
+      height: 155px;
     }
   }
+}
+
+.about-info {
+  grid-template-areas:
+    "bioimage"
+    "bio"
+    "job1"
+    "job2"
+    "job3";
+
+  grid-template-columns: 1fr;
 }
 //Smartphones
 @include mediaSm {

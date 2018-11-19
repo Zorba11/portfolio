@@ -14,10 +14,11 @@ menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   if (!showMenu) {
-    menuBtn.classList.add("close"); //.classList.remove() is a vanilla JS function used to remove class
+    menuBtn.classList.add("close"); //.classList.add() is a vanilla JS function used to add a class
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
+    document.getElementById("home").style.visibility = "hidden";
 
     //navItems used querySelecterAll() inorder to call all the three nav-item so, we are using forEach() here,which is a higher order array method
 
@@ -30,6 +31,7 @@ function toggleMenu() {
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
+    document.getElementById("home").style.visibility = "visible";
 
     //navItems used querySelecterAll() inorder to call all the three nav-item so, we are using forEach() here,which is a higher order array method
 
