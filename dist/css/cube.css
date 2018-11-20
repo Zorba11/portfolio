@@ -1,0 +1,58 @@
+.csstransforms3d .cube-container {
+  height: 100px;
+  position: relative;
+  width: 200px;
+  perspective: 600px;
+  perspective-origin: 50% 50%;
+  transition: 0.3s all ease; }
+
+.csstransforms3d .cube {
+  animation: spin 5s infinite linear;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s all ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(28deg);
+  backface-visibility: visible;
+  width: 100%; }
+  .csstransforms3d .cube figure {
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    font-size: 2em;
+    line-height: 6em;
+    text-align: center; }
+
+.csstransforms3d .cube .front {
+  transform: translateZ(100px);
+  background: rgba(230, 0, 0, 0.5); }
+
+.csstransforms3d .cube .back {
+  transform: rotateY(180deg) rotateX(0deg) translateZ(100px);
+  background: rgba(200, 0, 0, 0.6); }
+
+.csstransforms3d .cube .left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background: rgba(200, 0, 0, 0.5); }
+
+.csstransforms3d .cube .right {
+  transform: rotateY(90deg) translateZ(100px);
+  background: rgba(200, 0, 0, 0.4); }
+
+.csstransforms3d .cube .top {
+  transform: rotateX(90deg) translateZ(100px);
+  background: rgba(200, 0, 0, 0.3); }
+
+.csstransforms3d .cube .bottom {
+  transform: rotateX(-90deg) rotateZ(-180deg) translateZ(100px);
+  background: rgba(50, 50, 50, 0.5);
+  opacity: 0.55; }
+
+@keyframes spin {
+  from {
+    transform: rotateX(0) rotateY(0); }
+  to {
+    transform: rotateX(360deg) rotateY(360deg); } }

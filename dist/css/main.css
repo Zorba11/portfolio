@@ -57,7 +57,7 @@
       height: 300px;
       background: url("../img/alen_brand.jpg") no-repeat;
       border-radius: 50%;
-      border: solid 3px #eece1a;
+      border: solid 3px #12d9f3;
       opacity: 1 !important; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -65,7 +65,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #12d9f3; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #12d9f3; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -91,6 +91,71 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+img {
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
+  margin-left: 40px;
+  z-index: -1; }
+
+#mainDiv {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  margin-left: 60vw;
+  margin-top: -25vh;
+  perspective: 800px; }
+
+#boxDiv {
+  width: 225px;
+  transform-style: preserve-3d;
+  animation: cube 15s linear infinite; }
+
+#boxDiv div {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  border: 2px solid grey;
+  opacity: 0.8; }
+
+#front {
+  transform: translateZ(112.5px);
+  background: #1ba18f; }
+
+#back {
+  transform: rotateY(180deg) translateZ(112.5px);
+  background: #1ba18f; }
+
+#left {
+  transform: rotateY(-90deg) translateX(-112.5px);
+  transform-origin: left;
+  background: #1ba18f; }
+
+#right {
+  transform: rotateY(90deg) translateX(112.5px);
+  transform-origin: right;
+  background: #1ba18f; }
+
+#top {
+  transform: rotateX(-90deg) translateY(-112.5px);
+  transform-origin: top;
+  background: #1ba18f; }
+
+#bottom {
+  transform: rotateX(90deg) translateY(112.5px);
+  transform-origin: bottom;
+  background: #1ba18f; }
+
+@keyframes cube {
+  from {
+    transform: rotateY(0); }
+  to {
+    transform: rotateY(360deg); } }
+
+.css-typing {
+  position: absolute;
+  top: 50%; }
+
 * {
   box-sizing: border-box; }
 
@@ -99,10 +164,10 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto Slab", serif, Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/art_build.jpg);
+    background: url(../img/milkyway.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -113,7 +178,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.75); }
+      background: rgba(68, 68, 68, 0.6); }
 
 h1,
 h2,
@@ -129,7 +194,8 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(73, 73, 73, 0.5);
+    display: inline-block; }
 
 a {
   color: #fff;
@@ -141,7 +207,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #12d9f3; }
 
 main {
   padding: 4rem;
@@ -156,7 +222,7 @@ main {
       margin-top: 20vh; }
 
 a:hover {
-  color: #eece1a !important;
+  color: #12d9f3;
   transition: all 0.5s ease-out; }
 
 .about-info {
@@ -168,7 +234,7 @@ a:hover {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #12d9f3 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -181,7 +247,7 @@ a:hover {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #12d9f3 5px solid; }
 
 .projects {
   display: grid;
@@ -192,7 +258,7 @@ a:hover {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #12d9f3;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -209,7 +275,7 @@ a:hover {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #12d9f3;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -220,7 +286,7 @@ a:hover {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #12d9f3;
     color: #000; }
 
 .btn-dark {

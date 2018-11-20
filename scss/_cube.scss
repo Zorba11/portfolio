@@ -1,0 +1,66 @@
+img {
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
+  margin-left: 40px;
+  z-index: -1;
+}
+
+#mainDiv {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  margin-left: 60vw;
+  margin-top: -25vh;
+  perspective: 800px;
+}
+
+#boxDiv {
+  width: 225px;
+  transform-style: preserve-3d;
+  animation: cube 15s linear infinite;
+}
+#boxDiv div {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  border: 2px solid grey;
+  opacity: 0.8;
+}
+#front {
+  transform: translateZ(112.5px);
+  background: #1ba18f;
+}
+#back {
+  transform: rotateY(180deg) translateZ(112.5px);
+  background: #1ba18f;
+}
+#left {
+  transform: rotateY(-90deg) translateX(-112.5px);
+  transform-origin: left;
+  background: #1ba18f;
+}
+#right {
+  transform: rotateY(90deg) translateX(112.5px);
+  transform-origin: right;
+  background: #1ba18f;
+}
+#top {
+  transform: rotateX(-90deg) translateY(-112.5px);
+  transform-origin: top;
+  background: #1ba18f;
+}
+#bottom {
+  transform: rotateX(90deg) translateY(112.5px);
+  transform-origin: bottom;
+  background: #1ba18f;
+}
+
+@keyframes cube {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
