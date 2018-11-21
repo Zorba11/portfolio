@@ -1,12 +1,115 @@
-.css-typing {
-  position: static;
-  font-size: 25px;
-}
-
 #about-footer {
+  position: absolute;
+  top: 100vh;
+  display: inline;
+  border: 5px solid $primary-color;
+  width: 100%;
+
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+#typeBox {
+  position: absolute;
+  top: 35vh;
+  left: 60vh;
+  width: 35vw;
+  height: 22vw;
+  background: #777b7e;
+  align-self: center;
+  border-bottom: 8px solid $secondary-color;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 black;
+}
+.css-typing {
+  position: relative;
+  margin: 5px;
+  font-size: 2vw;
+  //   top: 40vh;
+  //   left: 35vw;
+  margin-left: 5px;
+}
+.css-typing p {
+  border-right: 0.15em solid $secondary-color;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 400px;
+  text-shadow: 2px 2px 5px black;
+  z-index: -1;
+}
+
+.css-typing p:nth-child(1) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-child(2) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-child(3) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-child(4) {
+  width: 15em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  //   -webkit-animation: blink 1s infinite;
+  //   animation: blink 1s infinite;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid $secondary-color;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+// ::after {
+//   visibility: hidden;
+// }
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
 }

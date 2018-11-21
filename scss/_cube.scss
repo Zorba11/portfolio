@@ -29,31 +29,31 @@ img {
 }
 #front {
   transform: translateZ(112.5px);
-  background: #1ba18f;
+  background: $secondary-color;
 }
 #back {
   transform: rotateY(180deg) translateZ(112.5px);
-  background: #1ba18f;
+  background: $secondary-color;
 }
 #left {
   transform: rotateY(-90deg) translateX(-112.5px);
   transform-origin: left;
-  background: #1ba18f;
+  background: $secondary-color;
 }
 #right {
   transform: rotateY(90deg) translateX(112.5px);
   transform-origin: right;
-  background: #1ba18f;
+  background: $secondary-color;
 }
 #top {
   transform: rotateX(-90deg) translateY(-112.5px);
   transform-origin: top;
-  background: #1ba18f;
+  background: $secondary-color;
 }
 #bottom {
   transform: rotateX(90deg) translateY(112.5px);
   transform-origin: bottom;
-  background: #1ba18f;
+  background: $secondary-color;
 }
 
 @keyframes cube {

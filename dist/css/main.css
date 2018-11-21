@@ -120,31 +120,31 @@ img {
 
 #front {
   transform: translateZ(112.5px);
-  background: #1ba18f; }
+  background: #12d9f3; }
 
 #back {
   transform: rotateY(180deg) translateZ(112.5px);
-  background: #1ba18f; }
+  background: #12d9f3; }
 
 #left {
   transform: rotateY(-90deg) translateX(-112.5px);
   transform-origin: left;
-  background: #1ba18f; }
+  background: #12d9f3; }
 
 #right {
   transform: rotateY(90deg) translateX(112.5px);
   transform-origin: right;
-  background: #1ba18f; }
+  background: #12d9f3; }
 
 #top {
   transform: rotateX(-90deg) translateY(-112.5px);
   transform-origin: top;
-  background: #1ba18f; }
+  background: #12d9f3; }
 
 #bottom {
   transform: rotateX(90deg) translateY(112.5px);
   transform-origin: bottom;
-  background: #1ba18f; }
+  background: #12d9f3; }
 
 @keyframes cube {
   from {
@@ -152,9 +152,102 @@ img {
   to {
     transform: rotateY(360deg); } }
 
-.css-typing {
+#about-footer {
   position: absolute;
-  top: 50%; }
+  top: 100vh;
+  display: inline;
+  border: 5px solid #444;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
+
+#typeBox {
+  position: absolute;
+  top: 35vh;
+  left: 60vh;
+  width: 35vw;
+  height: 22vw;
+  background: #777b7e;
+  align-self: center;
+  border-bottom: 8px solid #12d9f3;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 black; }
+
+.css-typing {
+  position: relative;
+  margin: 5px;
+  font-size: 2vw;
+  margin-left: 5px; }
+
+.css-typing p {
+  border-right: 0.15em solid #12d9f3;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 400px;
+  text-shadow: 2px 2px 5px black;
+  z-index: -1; }
+
+.css-typing p:nth-child(1) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.css-typing p:nth-child(2) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.css-typing p:nth-child(3) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.css-typing p:nth-child(4) {
+  width: 15em;
+  opacity: 0;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@keyframes type {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: 0.15em solid #12d9f3; }
+  100% {
+    border: none;
+    opacity: 1; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent; } }
 
 * {
   box-sizing: border-box; }
@@ -225,38 +318,18 @@ a:hover {
   color: #12d9f3;
   transition: all 0.5s ease-out; }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #12d9f3 3px solid; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #12d9f3 5px solid; }
-
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-gap: 0.7rem 0.7rem;
+  grid-template-rows: repeat(1, 2fr);
+  justify-content: space-around; }
   .projects img {
+    position: relative;
+    right: 2.6vw;
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
+      z-index: 1;
       opacity: 0.5;
       border-color: #12d9f3;
       transition: all 0.5s ease-out; }
@@ -348,5 +421,8 @@ a:hover {
 @media screen and (max-width: 500px) {
   main #home h1 {
     margin-top: 10vh; }
+  #mainDiv {
+    right: 25vw;
+    padding: 1rem; }
   .projects {
     grid-template-columns: 1fr; } }
