@@ -43,7 +43,7 @@ a {
 
 header {
   position: fixed; // let the menu stay always ontop,even when scrolling
-  z-index: 99;
+  z-index: 1;
   width: 100%; // stretches across the screen
 }
 

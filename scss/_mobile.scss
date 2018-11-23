@@ -9,6 +9,24 @@
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+    img {
+      right: 4vw;
+    }
+  }
+  main {
+    width: 65%;
+    z-index: 1;
+
+    .lg-heading {
+      font-size: 5rem;
+    }
+    .sm-heading {
+      font-size: 1.5rem;
+    }
+  }
+
+  #mainDiv {
+    margin-top: -30vh;
   }
 }
 
@@ -22,6 +40,21 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+  }
+  #typeBox {
+    top: 20vh;
+    height: 60vh;
+    width: 72%;
+    left: 10%;
+    margin-right: 10vw;
+  }
+  .css-typing {
+    top: 10%;
+    text-align: justify;
+    font-size: 4.5vw;
+  }
+  #mainDiv {
+    opacity: 0;
   }
 
   ul.menu-nav,
@@ -51,31 +84,59 @@
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
+    img {
+      right: 5.5vw;
+    }
   }
 }
 
-.about-info {
-  grid-template-areas:
-    "bioimage"
-    "bio"
-    "job1"
-    "job2"
-    "job3";
-
-  grid-template-columns: 1fr;
-}
 //Smartphones
 @include mediaSm {
+  #mainDiv {
+    opacity: 0;
+  }
   main #home h1 {
     margin-top: 10vh;
   }
 
-  #mainDiv {
-    right: 25vw;
-    padding: 1rem;
+  #typeBox {
+    top: 20vh;
+    height: 60vh;
+    width: 72%;
+    left: 10%;
+    margin-right: 10vw;
+  }
+  .css-typing {
+    top: 20%;
+    text-align: justify;
+    font-size: 4.5vw;
   }
 
   .projects {
     grid-template-columns: 1fr;
+
+    img {
+      right: 10vw;
+    }
+  }
+  .menu-nav,
+  .menu-branding {
+    width: 60%;
+  }
+  .lg-heading {
+    top: 10vh;
+    font-size: 5rem;
+  }
+  .sm-heading {
+    position: relative;
+    right: 15%;
+    font-size: 1.4rem;
+  }
+
+  .boxes {
+    div {
+      font-size: 1.5rem;
+      padding: 1.4rem 1.2rem;
+    }
   }
 }

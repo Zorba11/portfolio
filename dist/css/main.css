@@ -152,26 +152,14 @@ img {
   to {
     transform: rotateY(360deg); } }
 
-#about-footer {
-  position: absolute;
-  top: 100vh;
-  display: inline;
-  border: 5px solid #444;
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
-  height: 60px; }
-
 #typeBox {
   position: absolute;
-  top: 35vh;
-  left: 60vh;
+  top: 30vh;
+  left: 35%;
+  margin: 2vw;
   width: 35vw;
   height: 22vw;
   background: #777b7e;
-  align-self: center;
   border-bottom: 8px solid #12d9f3;
   z-index: 1;
   box-shadow: 0 4px 8px 0 black; }
@@ -229,6 +217,17 @@ img {
   animation-delay: 6s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+
+@-webkit-keyframes type {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: 0.15em solid #12d9f3; }
+  100% {
+    border: none;
+    opacity: 1; } }
 
 @keyframes type {
   0% {
@@ -296,7 +295,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 99;
+  z-index: 1;
   width: 100%; }
 
 .text-secondary {
@@ -383,7 +382,18 @@ a:hover {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+    .projects img {
+      right: 4vw; }
+  main {
+    width: 65%;
+    z-index: 1; }
+    main .lg-heading {
+      font-size: 5rem; }
+    main .sm-heading {
+      font-size: 1.5rem; }
+  #mainDiv {
+    margin-top: -30vh; } }
 
 @media screen and (max-width: 760px) {
   main {
@@ -392,6 +402,18 @@ a:hover {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+  #typeBox {
+    top: 20vh;
+    height: 60vh;
+    width: 72%;
+    left: 10%;
+    margin-right: 10vw; }
+  .css-typing {
+    top: 10%;
+    text-align: justify;
+    font-size: 4.5vw; }
+  #mainDiv {
+    opacity: 0; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -412,17 +434,39 @@ a:hover {
       width: 145px;
       height: 155px; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
-
-.about-info {
-  grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-  grid-template-columns: 1fr; }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects img {
+      right: 5.5vw; } }
 
 @media screen and (max-width: 500px) {
+  #mainDiv {
+    opacity: 0; }
   main #home h1 {
     margin-top: 10vh; }
-  #mainDiv {
-    right: 25vw;
-    padding: 1rem; }
+  #typeBox {
+    top: 20vh;
+    height: 60vh;
+    width: 72%;
+    left: 10%;
+    margin-right: 10vw; }
+  .css-typing {
+    top: 20%;
+    text-align: justify;
+    font-size: 4.5vw; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .projects img {
+      right: 10vw; }
+  .menu-nav,
+  .menu-branding {
+    width: 60%; }
+  .lg-heading {
+    top: 10vh;
+    font-size: 5rem; }
+  .sm-heading {
+    position: relative;
+    right: 15%;
+    font-size: 1.4rem; }
+  .boxes div {
+    font-size: 1.5rem;
+    padding: 1.4rem 1.2rem; } }

@@ -8,50 +8,50 @@ img {
 
 #mainDiv {
   position: absolute;
-  width: 225px;
-  height: 225px;
+  width: $cube-dimension;
+  height: $cube-dimension;
   margin-left: 60vw;
   margin-top: -25vh;
   perspective: 800px;
 }
 
 #boxDiv {
-  width: 225px;
+  width: $cube-dimension;
   transform-style: preserve-3d;
   animation: cube 15s linear infinite;
 }
 #boxDiv div {
   position: absolute;
-  width: 225px;
-  height: 225px;
+  width: $cube-dimension;
+  height: $cube-dimension;
   border: 2px solid grey;
   opacity: 0.8;
 }
 #front {
-  transform: translateZ(112.5px);
+  transform: translateZ($cube-translate);
   background: $secondary-color;
 }
 #back {
-  transform: rotateY(180deg) translateZ(112.5px);
+  transform: rotateY(180deg) translateZ($cube-translate);
   background: $secondary-color;
 }
 #left {
-  transform: rotateY(-90deg) translateX(-112.5px);
+  transform: rotateY(-90deg) translateX(-$cube-translate);
   transform-origin: left;
   background: $secondary-color;
 }
 #right {
-  transform: rotateY(90deg) translateX(112.5px);
+  transform: rotateY(90deg) translateX($cube-translate);
   transform-origin: right;
   background: $secondary-color;
 }
 #top {
-  transform: rotateX(-90deg) translateY(-112.5px);
+  transform: rotateX(-90deg) translateY(-$cube-translate);
   transform-origin: top;
   background: $secondary-color;
 }
 #bottom {
-  transform: rotateX(90deg) translateY(112.5px);
+  transform: rotateX(90deg) translateY($cube-translate);
   transform-origin: bottom;
   background: $secondary-color;
 }
