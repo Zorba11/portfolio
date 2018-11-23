@@ -25,7 +25,7 @@
     }
   }
 
-  #mainDiv {
+  #cubeDiv {
     margin-top: -30vh;
   }
 }
@@ -53,7 +53,7 @@
     text-align: justify;
     font-size: 4.5vw;
   }
-  #mainDiv {
+  #cubeDiv {
     opacity: 0;
   }
 
@@ -92,7 +92,7 @@
 
 //Smartphones
 @include mediaSm {
-  #mainDiv {
+  #cubeDiv {
     opacity: 0;
   }
   main #home h1 {
