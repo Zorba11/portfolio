@@ -3,6 +3,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
+const cube = document.querySelector("#cubeDiv");
 
 const navItems = document.querySelectorAll(".nav-item");
 
@@ -11,6 +12,12 @@ const navItems = document.querySelectorAll(".nav-item");
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+
+$(document).ready(function() {
+  $(cube).click(function() {
+    $(this).hide("blind", { direction: "vertical" }, 1000);
+  });
+});
 
 function toggleMenu() {
   if (!showMenu) {
@@ -41,3 +48,9 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// function cubeExplode() {
+//   $(document).ready(function() {
+//     $("#boxDiv").hide("explode", { pieces: 16 }, 2000);
+//   });
+// }
