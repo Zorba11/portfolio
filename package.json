@@ -9,9 +9,17 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Alen George",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zorba11/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zorba11/portfolio/issues"
   }
 }

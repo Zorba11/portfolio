@@ -4,8 +4,8 @@
 // }
 #typeBox {
   position: absolute;
-  top: 30vh;
-  left: 35%;
+  top: 25vh;
+  left: 30vw;
   margin: 2vw;
   width: 35vw;
   height: 22vw;
@@ -33,7 +33,7 @@
 }
 
 .css-typing p:nth-child(1) {
-  width: 17em;
+  width: 16em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -43,7 +43,7 @@
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-child(2) {
-  width: 17em;
+  width: 16.5em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -53,7 +53,7 @@
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-child(3) {
-  width: 17em;
+  width: 12.5em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -63,7 +63,7 @@
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-child(4) {
-  width: 15em;
+  width: 14em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -150,4 +150,3 @@
 //   50% {
 //     border-color: tranparent;
 //   }
-}

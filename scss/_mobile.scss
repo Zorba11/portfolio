@@ -42,14 +42,14 @@
     }
   }
   #typeBox {
-    top: 20vh;
-    height: 60vh;
-    width: 72%;
+    top: 15vh;
+    height: 60%;
+    width: 75%;
     left: 10%;
     margin-right: 10vw;
   }
   .css-typing {
-    top: 10%;
+    top: 5vh;
     text-align: justify;
     font-size: 4.5vw;
   }
@@ -102,12 +102,12 @@
   #typeBox {
     top: 20vh;
     height: 60vh;
-    width: 72%;
+    width: 74%;
     left: 10%;
     margin-right: 10vw;
   }
   .css-typing {
-    top: 20%;
+    top: 10vh;
     text-align: justify;
     font-size: 4.5vw;
   }
@@ -124,12 +124,17 @@
     width: 60%;
   }
   .lg-heading {
-    top: 10vh;
+    position: absolute;
+    top: 3vh;
     font-size: 5rem;
+    right: 6vw;
+    left: 6vw;
   }
   .sm-heading {
-    position: relative;
-    right: 15%;
+    position: absolute;
+    top: 57vh;
+    right: 6vw;
+    left: 6vw;
     font-size: 1.4rem;
   }
 
@@ -138,5 +143,12 @@
       font-size: 1.5rem;
       padding: 1.4rem 1.2rem;
     }
+  }
+
+  .icons {
+    position: absolute;
+    top: 74.5vh;
+    right: 6vw;
+    left: 6vw;
   }
 }

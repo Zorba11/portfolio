@@ -157,8 +157,8 @@ img {
 
 #typeBox {
   position: absolute;
-  top: 30vh;
-  left: 35%;
+  top: 25vh;
+  left: 30vw;
   margin: 2vw;
   width: 35vw;
   height: 22vw;
@@ -182,7 +182,7 @@ img {
   z-index: -1; }
 
 .css-typing p:nth-child(1) {
-  width: 17em;
+  width: 16em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -192,7 +192,7 @@ img {
   animation-fill-mode: forwards; }
 
 .css-typing p:nth-child(2) {
-  width: 17em;
+  width: 16.5em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -202,7 +202,7 @@ img {
   animation-fill-mode: forwards; }
 
 .css-typing p:nth-child(3) {
-  width: 17em;
+  width: 12.5em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -212,7 +212,7 @@ img {
   animation-fill-mode: forwards; }
 
 .css-typing p:nth-child(4) {
-  width: 15em;
+  width: 14em;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -242,14 +242,6 @@ img {
   100% {
     border: none;
     opacity: 1; } }
-
-@keyframes blink {
-  50% {
-    border-color: transparent; } }
-
-@-webkit-keyframes blink {
-  50% {
-    border-color: tranparent; } }
 
 * {
   box-sizing: border-box; }
@@ -291,6 +283,17 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5);
     display: inline-block; }
+
+.sm-headingW,
+.sm-headingC {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(73, 73, 73, 0.5);
+  display: inline-block; }
+
+.lg-headingW,
+.lg-headingC {
+  font-size: 4.5rem; }
 
 a {
   color: #fff;
@@ -406,13 +409,13 @@ a:hover {
       line-height: 1;
       margin-bottom: 1rem; }
   #typeBox {
-    top: 20vh;
-    height: 60vh;
-    width: 72%;
+    top: 15vh;
+    height: 60%;
+    width: 75%;
     left: 10%;
     margin-right: 10vw; }
   .css-typing {
-    top: 10%;
+    top: 5vh;
     text-align: justify;
     font-size: 4.5vw; }
   #cubeDiv {
@@ -449,11 +452,11 @@ a:hover {
   #typeBox {
     top: 20vh;
     height: 60vh;
-    width: 72%;
+    width: 74%;
     left: 10%;
     margin-right: 10vw; }
   .css-typing {
-    top: 20%;
+    top: 10vh;
     text-align: justify;
     font-size: 4.5vw; }
   .projects {
@@ -464,12 +467,22 @@ a:hover {
   .menu-branding {
     width: 60%; }
   .lg-heading {
-    top: 10vh;
-    font-size: 5rem; }
+    position: absolute;
+    top: 3vh;
+    font-size: 5rem;
+    right: 6vw;
+    left: 6vw; }
   .sm-heading {
-    position: relative;
-    right: 15%;
+    position: absolute;
+    top: 57vh;
+    right: 6vw;
+    left: 6vw;
     font-size: 1.4rem; }
   .boxes div {
     font-size: 1.5rem;
-    padding: 1.4rem 1.2rem; } }
+    padding: 1.4rem 1.2rem; }
+  .icons {
+    position: absolute;
+    top: 74.5vh;
+    right: 6vw;
+    left: 6vw; } }

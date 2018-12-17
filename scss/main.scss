@@ -36,6 +36,19 @@ h3 {
   }
 }
 
+.sm-headingW,
+.sm-headingC {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(lighten($primary-color, 2), 0.5);
+  display: inline-block;
+}
+
+.lg-headingW,
+.lg-headingC {
+  font-size: 4.5rem;
+}
+
 a {
   color: #fff;
   text-decoration: none;
