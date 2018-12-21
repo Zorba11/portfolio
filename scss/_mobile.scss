@@ -3,10 +3,11 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
-  // #cubeDiv {
-  //   position: absolute;
-  //   margin-top: -90vh;
-  // }
+  #cubeDiv {
+    position: absolute;
+    margin-top: -10%;
+    margin-right: 15vw;
+  }
 }
 
 //Desktops & Laptops
@@ -25,13 +26,15 @@
       font-size: 5rem;
     }
     .sm-heading {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      width: 45vw;
+      margin-right: 10px;
     }
   }
 
   #cubeDiv {
-    top: 53vh;
-    left: 7%;
+    margin-top: -10%;
+    margin-right: 8vw;
   }
 }
 
@@ -174,7 +177,7 @@
 //Ipads
 @include mediaIpad {
   #cubeDiv {
-    top: 53vh;
-    right: 7%;
+    top: 43vh;
+    right: 3%;
   }
 }

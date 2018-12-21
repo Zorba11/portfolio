@@ -381,9 +381,13 @@ a:hover {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  #cubeDiv {
+    position: absolute;
+    margin-top: -10%;
+    margin-right: 15vw; } }
 
-@media screen and (min-width: 769x) and (max-width: 1170px) {
+@media screen and (min-width: 768px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
     .projects img {
@@ -394,10 +398,12 @@ a:hover {
     main .lg-heading {
       font-size: 5rem; }
     main .sm-heading {
-      font-size: 1.5rem; }
+      font-size: 1.4rem;
+      width: 45vw;
+      margin-right: 10px; }
   #cubeDiv {
-    top: 53vh;
-    left: 7%; } }
+    margin-top: -10%;
+    margin-right: 8vw; } }
 
 #typeBox {
   top: 15vh;
@@ -499,5 +505,5 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   #cubeDiv {
-    top: 53vh;
-    right: 7%; } }
+    top: 43vh;
+    right: 3%; } }
