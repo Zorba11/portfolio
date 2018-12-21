@@ -384,8 +384,19 @@ a:hover {
     grid-template-columns: repeat(4, 1fr); }
   #cubeDiv {
     position: absolute;
-    margin-top: -4%;
-    margin-right: 21vw; } }
+    margin-top: -13%;
+    margin-right: 21vw; }
+  #typeBox {
+    top: 14vh;
+    height: 70%;
+    width: 75%;
+    left: 10%;
+    margin-right: 10vw; }
+  .css-typing {
+    margin-top: 3vh;
+    text-align: justify;
+    font-size: 4vw;
+    line-height: 5vw; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -408,16 +419,15 @@ a:hover {
 
 #typeBox {
   top: 14vh;
-  height: 40%;
-  width: 75%;
-  left: 10%;
-  margin-right: 10vw; }
+  height: 55%;
+  width: 66vw;
+  left: 18vw; }
 
 .css-typing {
-  margin-top: 3vh;
+  margin-top: 5vh;
   text-align: justify;
   font-size: 4vw;
-  line-height: 5vw; }
+  line-height: 4.7vw; }
 
 @media screen and (max-width: 760px) {
   main {

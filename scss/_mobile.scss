@@ -5,22 +5,23 @@
   }
   #cubeDiv {
     position: absolute;
-    margin-top: -4%;
+    margin-top: -13%;
     margin-right: 21vw;
   }
 
-  // #typeBox {
-  //   top: 15vh;
-  //   height: 60%;
-  //   width: 75%;
-  //   left: 10%;
-  //   margin-right: 10vw;
-  // }
-  // .css-typing {
-  //   top: 5vh;
-  //   text-align: justify;
-  //   font-size: 10px;
-  // }
+  #typeBox {
+    top: 14vh;
+    height: 70%;
+    width: 75%;
+    left: 10%;
+    margin-right: 10vw;
+  }
+  .css-typing {
+    margin-top: 3vh;
+    text-align: justify;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
 }
 
 //Desktops & Laptops
@@ -54,16 +55,15 @@
 
 #typeBox {
   top: 14vh;
-  height: 40%;
-  width: 75%;
-  left: 10%;
-  margin-right: 10vw;
+  height: 55%;
+  width: 66vw;
+  left: 18vw;
 }
 .css-typing {
-  margin-top: 3vh;
+  margin-top: 5vh;
   text-align: justify;
   font-size: 4vw;
-  line-height: 5vw;
+  line-height: 4.7vw;
 }
 
 //Tablets and Small laptops
