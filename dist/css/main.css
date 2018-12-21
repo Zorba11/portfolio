@@ -418,13 +418,13 @@ a:hover {
     margin-right: 8vw; } }
 
 #typeBox {
-  top: 14vh;
-  height: 55%;
+  top: 20vh;
+  height: 50%;
   width: 66vw;
   left: 18vw; }
 
 .css-typing {
-  margin-top: 5vh;
+  margin-top: 8vh;
   text-align: justify;
   font-size: 4vw;
   line-height: 4.7vw; }
