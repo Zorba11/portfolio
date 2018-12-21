@@ -167,7 +167,7 @@ img {
 .css-typing {
   position: relative;
   margin: 5px;
-  font-size: 2vw;
+  font-size: 4vw;
   margin-left: 5px; }
 
 .css-typing p {
@@ -384,8 +384,8 @@ a:hover {
     grid-template-columns: repeat(4, 1fr); }
   #cubeDiv {
     position: absolute;
-    margin-top: -10%;
-    margin-right: 15vw; } }
+    margin-top: -4%;
+    margin-right: 21vw; } }
 
 @media screen and (min-width: 768px) and (max-width: 1170px) {
   .projects {
@@ -406,16 +406,17 @@ a:hover {
     margin-right: 8vw; } }
 
 #typeBox {
-  top: 15vh;
+  top: 14vh;
   height: 60%;
   width: 75%;
   left: 10%;
   margin-right: 10vw; }
 
 .css-typing {
-  top: 5vh;
+  margin-top: 3vh;
   text-align: justify;
-  font-size: 4.5vw; }
+  font-size: 3vw;
+  line-height: 4.1vw; }
 
 @media screen and (max-width: 760px) {
   main {
@@ -467,14 +468,15 @@ a:hover {
     margin-top: 10vh; }
   #typeBox {
     top: 20vh;
-    height: 60vh;
+    height: 45vh;
     width: 74%;
     left: 10%;
     margin-right: 10vw; }
   .css-typing {
-    top: 10vh;
+    margin-top: 2vh;
     text-align: justify;
-    font-size: 4.5vw; }
+    font-size: 4.5vw;
+    line-height: 5vh; }
   .projects {
     grid-template-columns: 1fr; }
     .projects img {
@@ -506,4 +508,15 @@ a:hover {
 @media screen and (min-width: 768px) {
   #cubeDiv {
     top: 43vh;
-    right: 3%; } }
+    right: 3%; }
+  #typeBox {
+    top: 20vh;
+    height: 50vh;
+    width: 74%;
+    left: 10%;
+    margin-right: 10vw; }
+  .css-typing {
+    margin-top: 7vh;
+    text-align: justify;
+    font-size: 4.5vw;
+    line-height: 5vh; } }
