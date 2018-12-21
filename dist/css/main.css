@@ -387,16 +387,13 @@ a:hover {
     margin-top: -13%;
     margin-right: 21vw; }
   #typeBox {
-    top: 14vh;
-    height: 70%;
-    width: 75%;
-    left: 10%;
-    margin-right: 10vw; }
+    height: 50% !important;
+    width: 35vw !important;
+    left: 27% !important; }
   .css-typing {
     margin-top: 3vh;
-    text-align: justify;
-    font-size: 4vw;
-    line-height: 5vw; } }
+    font-size: 2vw !important;
+    line-height: 4.3vh !important; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -419,7 +416,7 @@ a:hover {
 
 #typeBox {
   top: 20vh;
-  height: 50%;
+  height: 45%;
   width: 66vw;
   left: 18vw; }
 
