@@ -387,9 +387,10 @@ a:hover {
     margin-top: -4%;
     margin-right: 21vw; } }
 
-@media screen and (min-width: 768px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 1rem; }
     .projects img {
       right: 4vw; }
   main {
@@ -402,12 +403,12 @@ a:hover {
       width: 45vw;
       margin-right: 10px; }
   #cubeDiv {
-    margin-top: -10%;
+    margin-top: -20%;
     margin-right: 8vw; } }
 
 #typeBox {
   top: 14vh;
-  height: 60%;
+  height: 40%;
   width: 75%;
   left: 10%;
   margin-right: 10vw; }
@@ -415,8 +416,8 @@ a:hover {
 .css-typing {
   margin-top: 3vh;
   text-align: justify;
-  font-size: 3vw;
-  line-height: 4.1vw; }
+  font-size: 4vw;
+  line-height: 5vw; }
 
 @media screen and (max-width: 760px) {
   main {
@@ -478,9 +479,11 @@ a:hover {
     font-size: 4.5vw;
     line-height: 5vh; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    grid-gap: 0.5rem 0.5rem; }
     .projects img {
-      right: 10vw; }
+      right: 9.9vw; }
   .menu-nav,
   .menu-branding {
     width: 60%; }
@@ -505,10 +508,10 @@ a:hover {
     right: 6vw;
     left: 6vw; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #cubeDiv {
-    top: 43vh;
-    right: 3%; }
+    top: 61vh;
+    right: 10%; }
   #typeBox {
     top: 20vh;
     height: 50vh;
@@ -519,4 +522,19 @@ a:hover {
     margin-top: 7vh;
     text-align: justify;
     font-size: 4.5vw;
-    line-height: 5vh; } }
+    line-height: 5vh; }
+  main {
+    width: 65%;
+    z-index: 1; }
+    main .lg-heading {
+      font-size: 5rem; }
+    main .sm-heading {
+      font-size: 1.4rem;
+      width: 45vw;
+      margin-right: 10px; }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    grid-gap: 0.5rem 0.5rem; }
+    .projects img {
+      right: 5vw; } }
