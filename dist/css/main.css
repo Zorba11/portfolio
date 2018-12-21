@@ -106,9 +106,6 @@ img {
   margin-top: -25vh;
   perspective: 800px; }
 
-.ui-effects-explode {
-  margin: 0; }
-
 #boxDiv {
   width: 225px;
   transform-style: preserve-3d;
@@ -386,7 +383,7 @@ a:hover {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769x) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
     .projects img {
@@ -399,7 +396,20 @@ a:hover {
     main .sm-heading {
       font-size: 1.5rem; }
   #cubeDiv {
-    margin-top: -30vh; } }
+    top: 53vh;
+    left: 7%; } }
+
+#typeBox {
+  top: 15vh;
+  height: 60%;
+  width: 75%;
+  left: 10%;
+  margin-right: 10vw; }
+
+.css-typing {
+  top: 5vh;
+  text-align: justify;
+  font-size: 4.5vw; }
 
 @media screen and (max-width: 760px) {
   main {
@@ -486,3 +496,8 @@ a:hover {
     top: 74.5vh;
     right: 6vw;
     left: 6vw; } }
+
+@media screen and (min-width: 768px) {
+  #cubeDiv {
+    top: 53vh;
+    right: 7%; } }

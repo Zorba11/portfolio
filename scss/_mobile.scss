@@ -3,6 +3,10 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  // #cubeDiv {
+  //   position: absolute;
+  //   margin-top: -90vh;
+  // }
 }
 
 //Desktops & Laptops
@@ -26,8 +30,22 @@
   }
 
   #cubeDiv {
-    margin-top: -30vh;
+    top: 53vh;
+    left: 7%;
   }
+}
+
+#typeBox {
+  top: 15vh;
+  height: 60%;
+  width: 75%;
+  left: 10%;
+  margin-right: 10vw;
+}
+.css-typing {
+  top: 5vh;
+  text-align: justify;
+  font-size: 4.5vw;
 }
 
 //Tablets and Small laptops
@@ -150,5 +168,13 @@
     top: 74.5vh;
     right: 6vw;
     left: 6vw;
+  }
+}
+
+//Ipads
+@include mediaIpad {
+  #cubeDiv {
+    top: 53vh;
+    right: 7%;
   }
 }
