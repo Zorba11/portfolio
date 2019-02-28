@@ -1,5 +1,5 @@
 # portfolio
-This is a responsive portfolio created with just HTML, SASS, JavaScript and Vanilla js.
+This is a responsive portfolio created with just HTML, SASS, JavaScript and some Vanilla js.
 The final files and images are in the dist folder.
 A) _main.scss - have the main styling codes.
 B) _config.scss - have all the media queries defined for various devices.
