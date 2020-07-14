@@ -77,6 +77,14 @@ $cube-translate: $cube-dimension/2;
   }
 }
 
+@mixin mediaXXl {
+  //for huge screens
+  @media screen and (min-width: 1080px) and (min-height: 1920px) {
+    //any CSS we put inside of here will only apply if the screen-width is 1171px and above
+    @content;
+  }
+}
+
 @mixin mediaIpad {
   //for ipad
   @media screen and (min-width: 768px) and (max-width: 1023px) {

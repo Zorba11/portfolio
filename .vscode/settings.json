@@ -1,1 +1,5 @@
-{ "git.path": "C:\\Program Files\\Git\\bin\\git.exe", "git.enabled": true }
+{
+    "git.path": "C:\\Program Files\\Git\\bin\\git.exe",
+    "git.enabled": true,
+    "liveServer.settings.port": 5501
+}
