@@ -133,6 +133,10 @@
 
 //Smartphones
 @include mediaSm {
+  
+  .menu-btn {
+    right: 8vw;
+  }
   #cubeDiv {
     opacity: 0;
   }

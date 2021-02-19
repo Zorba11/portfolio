@@ -1,10 +1,18 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
+  left: 90vw;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
+
+  @media only screen and (max-width: 800px) {
+    .menu-btn {
+      left: 76vw;
+      top: 35px;
+    }
+  }
+
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
@@ -306,7 +314,8 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc( 100vh-60px); }
+  min-height: calc(
+ 100vh-60px); }
   main .icon {
     margin-top: 1rem; }
     main .icon a {
