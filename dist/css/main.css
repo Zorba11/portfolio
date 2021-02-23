@@ -395,7 +395,11 @@ align-self: center; */
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr); 
+  }
+  /* .projects img {
+    right: 3.1vw;
+  } */
   #cubeDiv {
     position: absolute;
     margin-top: -13%;
