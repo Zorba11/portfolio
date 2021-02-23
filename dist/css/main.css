@@ -333,11 +333,16 @@ a:hover {
   display: grid;
   grid-gap: 0.7rem 0.7rem;
   grid-template-rows: repeat(1, 2fr);
-  justify-content: space-around; }
+  /* justify-content: center; 
+  align-items: center;
+  justify-items: center;
+align-self: center; */
+}
   .projects img {
     position: relative;
-    right: 2.6vw;
+    right: 3.1vw;
     width: 100%;
+    align-items: inherit;
     border: 3px #fff solid; }
     .projects img:hover {
       z-index: 1;
