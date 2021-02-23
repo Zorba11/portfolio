@@ -342,7 +342,7 @@ align-self: center; */
     position: relative;
     right: 3.1vw;
     width: 100%;
-    align-items: inherit;
+    /* align-items: inherit; */
     border: 3px #fff solid; }
     .projects img:hover {
       z-index: 1;
