@@ -340,7 +340,7 @@ align-self: center; */
 }
   .projects img {
     position: relative;
-    right: 3.1vw;
+    left: -40px;
     width: 100%;
     /* align-items: inherit; */
     border: 3px #fff solid; }
