@@ -8,4 +8,3 @@ D) _menu.scss - have stylings for the navigation items.
 E) _abouttyping.scss - have the codes for the typing effect.
 F) _cube.scss - have the code for the rotating cube.
 G) All other files have what their name implies :)
-You can view the final updated version at: http://alengeorge.com/
